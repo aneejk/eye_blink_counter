@@ -32,7 +32,6 @@ def GetFaceMeshCord(image,draw = True):
             x_px = min(math.floor(ldmark.x * image_width), image_width - 1)
             y_px = min(math.floor(ldmark.y * image_height), image_height - 1)
             face_points.append((x_px,y_px))
-          print('point')
           AllMesh.append(face_points)
           if draw :
             mp_drawing.draw_landmarks(
